@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 15px 'Helvetica', sans-serif;
+    font: 'Helvetica', sans-serif;
 }
 
 :root {
@@ -19,9 +19,88 @@
 
 :root {
     --player-height: 80px;
-    --main_menu-width: 300px;
+    --main_menu-width: 280px;
 }
 
+/*  #region utilities */
+
+.d_flex{
+    display: flex;
+}
+
+.m_bot_auto{
+margin-top: 60%;
+}
+
+/* #region colonne */
+
+
+.col_1 {
+    width: calc(100% /12 *1);
+
+}
+
+.col_2 {
+    width: calc(100% /12 *2);
+
+}
+
+.col_3 {
+    width: calc(100% /12 *3);
+
+}
+
+.col_4 {
+    width: calc(100% /12 *4);
+
+}
+
+.col_5 {
+    width: calc(100% /12 *5);
+
+}
+
+.col_6 {
+    width: calc(100% /12 *6);
+
+}
+
+.col_7 {
+    width: calc(100% /12 *7);
+
+}
+
+.col_8 {
+    width: calc(100% /12 *8);
+
+}
+
+.col_9 {
+    width: calc(100% /12 *9);
+
+}
+
+.col_10 {
+    width: calc(100% /12 *10);
+
+}
+
+.col_11 {
+    width: calc(100% /12 *11);
+
+}
+
+.col_12 {
+    width: calc((100% /12 *12)-1rem);
+
+}
+
+/* #endregion colonne */
+
+/*  #endregion utilities */
+
+
+/*  #region layout container */
 .main-wrapper {
 
     display: flex;
@@ -31,11 +110,8 @@
 }
 
 .wrapper {
-    /* height: calc(100% - var(--player-height));
-    width: calc(100% - var(--main_menu-width)); */
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: row;
 }
@@ -45,8 +121,12 @@ nav {
     height: 100%;
     background: var(--prymary-black);
     color: var(--text);
+    padding: 1rem 2rem;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .body-wrapper {
     width: 100%;
@@ -72,4 +152,71 @@ nav {
     height: var(--player-height);
     z-index: 99;
     background-color: var(--player);
+
 }
+
+
+/*  #endregion layout container */
+
+
+
+/*#region main_menu */
+
+.logo{
+    width: 80%;
+    padding: 1rem;
+}
+
+.bt_nav_selection{
+  padding: 1rem 0.5rem;
+  font-size: 20px;
+}
+
+.bt_nav_selection:hover{
+   
+  margin-left: -1rem;
+    font-size: 20px;
+    color: var(--text-light);
+    border-left: 6px solid var(--accent);
+    cursor: pointer;
+  }
+
+nav>h2{
+    font-size: 28px;
+    color: var(--text-light);
+    padding: 1rem 0 ;
+}
+
+.square{
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: var(--text);
+    color: var(--prymary-black);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav_playlist_menu{
+   position: relative;
+   overflow: auto;
+   height: 250px;
+}
+
+nav>hr{
+    border-bottom: 0.5px solid var(--text);
+    opacity: 0.5;
+}
+
+.nav_user{
+    color: var(--text-light);
+    padding-top: 1rem;
+    font-size: 28px;
+}
+.nav_user>h3{
+    padding-left: 0.5rem;
+}
+
+/*#endregion main_menu */
+
