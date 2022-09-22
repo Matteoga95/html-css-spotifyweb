@@ -236,7 +236,7 @@
 
         <div class="bottom_bar d_flex">
 
-            <div class="d_flex">
+            <div class="d_flex h-100 col_4">
                 <img class="player_img" src="./assets/img/sinister.jpeg" alt="">
 
                 <div>
@@ -244,16 +244,38 @@
                     <h4 class="c_grey">Brano Nome</h4>
                 </div>
 
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
 
             </div>
 
-            <div>
-                <h2>ciao</h2>
+            <div class="col_4">
+               
+                <div class="d_flex_center">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+
+                <div class="d_flex_center">
+                    <span id="current-time" class="time">0:25</span>
+                    <input type="range" id="seek-slider" max="100" value="0">
+                    <span id="duration" class="time">4:35</span>
+                  
+                </div>
+                
+
             </div>
 
 
-            <div>
-                <h2>ciao</h2>
+            <div class="col_4 d_flex_right">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" id="seek-slider_audio" max="100" value="0">
+
             </div>
 
 
