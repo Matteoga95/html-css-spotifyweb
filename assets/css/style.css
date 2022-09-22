@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 'Helvetica', sans-serif;
+    font-family: 'Signika', sans-serif;
 }
 
 :root {
@@ -265,7 +265,8 @@ nav>hr{
     font-size: 28px;
 }
 .nav_user>h3{
-    padding-left: 0.5rem;
+  
+    font-size: 26px;
 }
 
 /*#endregion main_menu */
@@ -343,7 +344,7 @@ padding: 1rem 0;
 }
 
 .player_img {
-    width: 18%;
+    width: 10%;
  padding: 0 1rem;
 }
 #seek-slider_audio{
