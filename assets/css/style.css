@@ -122,7 +122,7 @@ nav {
     background: var(--prymary-black);
     color: var(--text);
     padding: 1rem 2rem;
-    position: absolute;
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -161,6 +161,7 @@ nav {
 
 
 /*#region main_menu */
+
 
 .logo{
     width: 80%;
@@ -219,4 +220,22 @@ nav>hr{
 }
 
 /*#endregion main_menu */
+
+
+/* #region content */
+.head{
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.upgrade{
+    color: var(--text-light);
+    align-self: center;
+    padding: 1rem;
+    border: 1px solid var(--text-light);
+    border-radius: 30px;
+   
+}
+
+
+/* #endregion content */
 
