@@ -144,6 +144,7 @@ nav {
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    background-color: var(--secondary);
 }
 
 .head {
@@ -158,7 +159,7 @@ nav {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    background-color: var(--secondary);
+  
     color: var(--text);
 }
 
